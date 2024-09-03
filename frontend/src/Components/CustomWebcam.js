@@ -35,7 +35,7 @@ const CustomWebcam = ({ albumId, authToken, onImagesReceived, noFaceFound }) => 
       if (imgUrl) {
         try {
           const response = await axios.get(
-            `${process.env.REACT_APP_BASE_URL}/albums/${albumId}/find-my-images`,
+            `/api/albums/${albumId}/find-my-images`,
             {
               params: {
                 album_id: albumId,

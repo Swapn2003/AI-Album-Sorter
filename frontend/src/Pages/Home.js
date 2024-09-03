@@ -26,7 +26,7 @@ const Home = () => {
   const fetchAllAlbums = async () => {
     setLoading(true);
     try {
-      const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/user/albums`, {
+      const response = await axios.get(`/api/user/albums`, {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${authToken}`, // Ensure authToken is available in your component
@@ -67,7 +67,7 @@ const Home = () => {
 
       try {
 
-        const response = await axios.post(`${process.env.REACT_APP_BASE_URL}/albums`, newAlbum, {
+        const response = await axios.post(`/api/albums`, newAlbum, {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${authToken}`,
@@ -99,7 +99,7 @@ const Home = () => {
       };
 
       try {
-        const response = await axios.post(`${process.env.REACT_APP_BASE_URL}/albums/${newAlbumTitle}/add`, newAlbum, {
+        const response = await axios.post(`/api/albums/${newAlbumTitle}/add`, newAlbum, {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${authToken}`,

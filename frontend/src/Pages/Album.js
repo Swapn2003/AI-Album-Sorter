@@ -59,7 +59,7 @@ const Album = () => {
     }
     
     try {
-      const backendResponse = await axios.post(`${process.env.REACT_APP_BASE_URL}/albums/${albumId}/upload`, urls,
+      const backendResponse = await axios.post(`/api/albums/${albumId}/upload`, urls,
         {
           headers: {
             'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ const Album = () => {
   const fetchAllCloudinaryImages = async () => {
     setLoading(true); // Show loading pop-up
     try {
-      const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/albums/${albumId}`, {
+      const response = await axios.get(`/api/albums/${albumId}`, {
         params: {
           album_id: albumId,
         },
