@@ -32,4 +32,30 @@
     font-size: 24px;
     cursor: pointer;
   }
+
+
+  /* Responsive adjustments for tablets and smaller devices */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 50%;
+    height: 70%;
+  }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 480px) {
+  .modal-content {
+    width: 80%;
+    height: auto;
+    max-height: 90%;
+    padding: 15px;
+    overflow-y: auto;
+  }
+
+  .modal-close {
+    font-size: 20px;
+    top: 5px;
+    right: 5px;
+  }
+}
   

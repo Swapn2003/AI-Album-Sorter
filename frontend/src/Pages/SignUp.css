@@ -133,3 +133,58 @@
     text-decoration: underline;
   }
   
+
+  /* Responsive adjustments for tablets and smaller devices */
+@media (max-width: 768px) {
+  .signup-page-container {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+  }
+
+  .left-half {
+    border-radius: 5% 5% 0 0;
+  }
+
+  .right-half {
+    border-radius: 0 0 5% 5%;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  .sign-up-button {
+    width: 100%;
+  }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 480px) {
+  .signup-page-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .left-half .website-details h1 {
+    font-size: 28px;
+  }
+
+  .left-half .website-details p {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .sign-up-button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .login-text {
+    font-size: 12px;
+  }
+}

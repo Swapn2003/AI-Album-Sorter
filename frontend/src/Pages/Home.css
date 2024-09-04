@@ -183,3 +183,90 @@
   font-size: 14px;
   color: #B3B3B3;
 }
+
+
+/* Responsive adjustments for tablets and smaller devices */
+@media (max-width: 768px) {
+  .allalbum-content {
+    font-size: 36px;
+  }
+
+  .button-container {
+    width: 50%;
+    gap: 10px;
+  }
+
+  .popup {
+    width: 60vw;
+    height: auto;
+    padding: 15px;
+  }
+
+  .popup .input {
+    font-size: 16px;
+  }
+
+  .submit-button {
+    width: 70%;
+    font-size: 16px;
+  }
+
+  .album-section-title {
+    font-size: 28px;
+  }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 480px) {
+  .allalbum-image-container {
+    height: 40vh;
+  }
+
+  .allalbum-content {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .button-container {
+    width: 80%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .popup {
+    width: 80vw;
+    padding: 10px;
+  }
+
+  .popup-form {
+    gap: 10px;
+  }
+
+  .popup .input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .submit-button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .album-section-title {
+    font-size: 24px;
+  }
+
+  .album-grid {
+    gap: 10px;
+  }
+
+  .album-card {
+    padding: 15px;
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}
