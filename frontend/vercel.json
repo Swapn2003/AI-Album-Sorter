@@ -1,9 +1,10 @@
 {
-    "rewrites": [
-      {
-        "source": "/api/:path*",
-        "destination": "http://photonapi.lakshitsethia.in:8000/:path*"
-      }
-    ]
-  }
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "http://photonapi.lakshitsethia.in:8000/:path*"
+    }
+  ]
+}
+  
   
