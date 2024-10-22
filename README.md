@@ -3,7 +3,6 @@
 An intelligent photo management system that uses facial recognition to automatically organize and sort your photos in shared albums.
 
 <details>
-<details>
 <summary>Contents</summary>
 
 * [Description](#description)
